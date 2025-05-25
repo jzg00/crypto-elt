@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: crypto_raw          
+    database: CRYPTO_DB
+    schema: CRYPTO_RAW
+    tables:
+      - name: prices_raw
+        description: "Raw price data loaded from S3"
