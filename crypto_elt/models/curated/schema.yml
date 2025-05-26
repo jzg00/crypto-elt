@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: daily_price_metrics
+    description: "Daily aggregated cryptocurrency price metrics (avg, min, max) per symbol"
+    columns:
+      - name: symbol
+        description: "Ticker symbol for the cryptocurrency (BTC and ETH)"
+        tests:
+          - not_null
+          - unique
+      - name: date
+        description: "Date of the price aggregation"
+        tests:
+          - not_null
+      - name: avg_price
+        description: "Average price over the day"
+      - name: min_price
+        description: "Lowest price over the day"
+      - name: max_price
+        description: "Highest price over the day"
