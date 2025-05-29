@@ -10,5 +10,6 @@ profiles.yml
 .venv/
 venv/
 
+*.csv
 
 .DS_Store
